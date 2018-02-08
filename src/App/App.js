@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
 import './App.css';
+import One from '../pages/One/One'
 
 class App extends Component {
+  constructor(props,context) {
+    super(props,context)
+    this.state = {
+      flag:true
+    }
+  }
   render() {
+    const arr = [1,2,3]
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          
-        </p>
+        <One />
+        { arr.map((item, index) => { return <p key={index}>this is {item}</p> }) }
       </div>
     );
   }
