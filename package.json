@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "antd": "^3.2.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+=======
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+>>>>>>> 4d60c3de09e35bf37209ff1a07c51fba82491b8e
     "react-scripts": "1.1.0"
   },
   "scripts": {
