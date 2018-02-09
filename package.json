@@ -3,14 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
-    "antd": "^3.2.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-=======
+    "antd": "3.2.0",
     "react": "16.2.0",
     "react-dom": "16.2.0",
->>>>>>> 4d60c3de09e35bf37209ff1a07c51fba82491b8e
     "react-scripts": "1.1.0"
   },
   "scripts": {
@@ -20,7 +15,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "babel-plugin-import": "^1.6.3",
-    "react-app-rewired": "^1.4.1"
+    "babel-plugin-import": "1.6.3",
+    "react-app-rewired": "1.4.1"
   }
 }
