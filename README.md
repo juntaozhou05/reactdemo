@@ -1,4 +1,5 @@
-基于create-react-app 和antd 的react demo
+基于create-react-app、react-router-dom、ant design 的react demo
+安装后可以直接进行项目开发
 
 ## 使用
 

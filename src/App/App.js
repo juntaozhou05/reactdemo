@@ -1,23 +1,29 @@
 import React, { Component } from 'react';
-import './App.css';
-import One from '../pages/One/One'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'//导入的方式跟之前有点变化
+import One from '../pages/One/'
+import Hello from '../pages/Hello/'
+import List from '../pages/List/'
 
-class App extends Component {
-  constructor(props,context) {
-    super(props,context)
-    this.state = {
-      flag:true
-    }
+class RouterList extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {}
   }
   render() {
-    const arr = [1,2,3]
-    return (
-      <div className="App">
-        <One />
-        { arr.map((item, index) => { return <p key={index}>this is {item}</p> }) }
+    return (<Router>
+      <div>
+        <Link to="/">首页</Link>
+        <br />
+        <Link to="/hello">第二页</Link>
+        <br />
+        <Link to="/List">一个列表</Link>
+        <br />
+        <Route exact path="/" component={One} />
+        <Route path="/hello" component={Hello} />
+        <Route path="/List" component={List} />
       </div>
-    );
+    </Router>)
   }
 }
 
-export default App;
+export default RouterList
